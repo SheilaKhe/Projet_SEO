@@ -6,52 +6,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="font/fontawesome-free-5.15.3-web/css/all.css">
-    <title>Les meilleurs restaurants de Paris</title>
+    <title>REST'O'PARIS - Les meilleurs restaurants à Paris</title>
     <!-- Titre : 70 caractères maximum -->
-    <meta name="description" content="Si vous voulez bien manger et boire sur les plus belles terrasses de Paris, ce site est fait pour vous.">
+    <meta name="description" content="Vous cherchez un endroit où vous pourriez manger ou juste boire un verre? Rest'O'Paris a fait pour vous une sélection des trois 
+    meilleurs restaurants à Paris">
     <!-- 170 caractères maximum -->
 
     <!-- Open Graph -->
     <meta property="og:site_name" content="Meilleurs restaurants de Paris">
-    <meta property="og:description" content="Si vous voulez bien manger et boire sur les plus belles terrasses de Paris, ce site est fait pour vous.">
-    <meta property="og:url" content="https://www.top3-restaurants-paris.com">
+    <meta property="og:description" content="Vous cherchez un endroit où vous pourriez manger ou juste boire un verre? Rest'O'Paris a fait pour vous une sélection des trois 
+    meilleurs restaurants à Paris">
+    <meta property="og:url" content="https://www.restoparis.com">
     <meta property="og:image" content="img/bar2.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary">
-    <meta property="twitter:domain" content="https://www.top3-restaurants-paris.com">
-    <meta property="twitter:title" content="Meilleurs restaurants de Paris">
+    <meta property="twitter:domain" content="https://www.restoparis.com">
+    <meta property="twitter:title" content="Rest'O'Paris - Top 3 des meilleurs restaurants de Paris">
     <meta property="twitter:image" content="img/bar2.jpg">
 
     <!-- Général -->
-    <meta property="author" content="Sheila Khedoo/Florent Lefort">
+    <meta property="author" content="Sheila Khedoo, Florent Lefort">
 
 </head>
     <body>
-        <header> 
-            <div id="logo">
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo Rest'O'Paris">
-            </a>
+        <header role="banner">
+
+            <div id="connexion">
+                <div class="co">
+                    <i class="fas fa-user" aria-label="Lien redirigeant vers le formulaire d'inscription ou de connexion" onclick="window.location.href = 'page_co.html'"></i>
+                <a href="#">Inscription/Connexion</a>
+                </div>
+                <a href="page_contact.html" id="contact">Contactez-nous</a>
             </div>
-            <nav>
+            
+                <div id="logo">
+                    <a href="index.html">
+                        <img src="img/logo1.png" alt="Logo Rest'O'Paris" role="link" aria-label="Page d'accueil">>
+                    </a>
+                </div>
+
+            <nav aria-label="navigation principale">
                 <ul>
-                    <li><a href="page_2.html">Top 1</a></li>
-                    <li><a href="page_3.html">Top 2</a></li>
-                    <li><a href="page_4.html">Top 3</a></li>
-                    <li><a href="page_contact.html">Contact</a></li>
+                    <li><a href="page_2.html" aria-label="Deuxième page">Top 1</a></li>
+                    <li><a href="page_3.html" aria-label="Troisième page">Top 2</a></li>
+                    <li><a href="page_4.html" aria-label="Quatrième page">Top 3</a></li>
+                    
                 </ul> 
             </nav>
+
         </header>
 
         <hr>
 
         <main>
             <section id="first_section">
-                <h1>Les meilleurs restaurants de Paris</h1>
+
+                <h1><u>NOTRE SÉLECTION</u></h1>
             
                 <p>Le Covid c'est enfin du passé voilà donc notre iconoclassement pour mettre 
-                    le bordel dans la galaxie étoilée. Grandes terrasse, meilleurs bières, 
+                    le bordel dans la galaxie étoilée. Grandes terrasses, meilleures bières, 
                     bistrots ou spots branchés… L’émotion peut surgir d’un bao à 5 € 
                     comme d’un plat sophistiqué à une centaine d’euros. Parce qu’on peut aimer picoler sur le zinc 
                     d’un comptoir sans chaises, kiffer s’attabler comme un prince 
@@ -61,14 +75,15 @@
                     LA question existentielle « on mange où à Paris ? » vous saurez quoi 
                     répondre !
                 </p>
+
             </section>
 
-            <section id="second_section">
+            <section id="second_section" role="navigation">
 
                 <a href="page_2.html">
-                    <article class="article_index">
+                    <article class="article_index" role="link">
                         <img src="img/bar1.png" alt="Grande terrasse d'un restaurant à Paris" class="img-article">
-                        <h2> -1- Septime </h2>
+                        <h2> -1- SEPTIME </h2>
                             <p>Paris En 2011, Bertrand Grébaut déboule avec cette table gastronomique dépoussiérée. 
                                 Révolution ! Cet ancien de Passard et Robuchon (et du collectif Kourtrajmé !) ose 
                                 le service en Stan Smith, dans un décor brut de chez brut. Depuis ? Septime a (enfin) 
@@ -82,22 +97,22 @@
                 </a>
 
                 <a href="page_3.html">
-                    <article class="article_index">
+                    <article class="article_index" role="link">
                         <img src="img/bar2.jpg" alt="Grande terrasse d'un restaurant avec vue sur la Tour Eiffel à Paris" class="img_article">
-                        <h2> -2- La grande dame</h2>
-                        <p>Dans le 7e arrondissement, le panorama sur Paris avant tout ! Tel est le mantra de Michael Grosman,
-                            taulier fou de vin nature, et Masahide Ikuta, fine lame nipponne. Sur leur immense terrasse, 
-                            coincés entre une cagette d'oranges et une botte de poireaux, on joue des coudes et tutoie la grande voisine, 
-                            La tour Eiffel. Les assiettes ? Elles s’attrapent au vol : « Côte de bœuf, qui veut ? » Digne du gueuloir de Flaubert !</p>
+                        <h2> -2- LE ROOFTOP</h2>
+                        <p>Elle est considérée comme la plus grande terrasse couverte de Paris et dévoile une décoration unique grâce à son impressionnante 
+                            structure habillée d’une verrière futuriste inédite. Avec un accès direct sur l’Avenue Kléber, la terrasse Kléber du Peninsula 
+                            s’avère être l’endroit idéal pour un repas, un apéritif ou encore un cocktail à l'ombre des oliviers. De belles saveurs raffinées 
+                            sont la promesse d'une expérience culinaire aussi réussie que le cadre offert par cette terrasse de palace. </p>
                     </article>
                 </a>
                     
 
                 <a href="page_4.html">
-                    <article class="article_index"> 
-                        <img src="img/bar3.png" alt="Meilleur bar terrasse à Paris" class="img_article">
+                    <article class="article_index" role="link"> 
+                        <img src="img/bar3.png" alt="Pub irlandais où on sert la meilleure bière de Paris" class="img_article">
                         <h2>-3- CORCORAN’S IRISH PUB </h2>
-                        <p>Sur le sol Parisien, Il y a des lieux qui détonnent mais sonnent comme une évidence. 
+                        <p>Sur le sol Parisien, il y a des lieux qui détonnent mais sonnent comme une évidence. 
                             CORCORAN’S IRISH PUB est de ceux-là. D’apparence, un modeste bar irlandais où bâfrer une bon grosse pinte de bière. 
                             En réalité, un vrai restaurant d’auteur. Le chef franco-irlandais Ochonel Chris y peint une cuisine sensible, unique, 
                             voyageuse… Le genre qui vous colle les poils, sans qu’on s’y attende.</p>
@@ -108,12 +123,12 @@
 
         
 
-            <footer>
-               <p> &copy; <u>REST'O'PARIS</u> </p> 
-               <div id="social_media">
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-twitter"></i>
+            <footer role="contentinfo">
+               <p> &copy; <u>REST'O'PARIS</u></p> 
+               <div class="soc_media">
+                    <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-label="Icône Facebook"></i></a>
+                    <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label="Icône Instagram"></i></a>
+                    <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-label="Icône Twitter"></i></a>
                </div>
             </footer>
             

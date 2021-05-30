@@ -5,23 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Restaurant 1</title>
+    <link rel="stylesheet" href="font/fontawesome-free-5.15.3-web/css/all.css">
+    <title>Rest'O'Paris - Top 1</title>
+    <meta name="description" content="Vous cherchez un endroit où vous pourriez manger ou juste boire un verre? Rest'O'Paris a fait pour vous une sélection des trois 
+    meilleurs restaurants à Paris.">
+    <!-- 170 caractères maximum -->
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Meilleurs restaurants de Paris">
+    <meta property="og:description" content="Voici le restaurant parisien qui arrive à la première place de notre classement.">
+    <meta property="og:url" content="https://www.restoparis/top1.com">
+    <meta property="og:image" content="img/img1.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:domain" content="https://www.restoparis/top1.com">
+    <meta property="twitter:title" content="Voici le restaurant parisien qui arrive à la première place de notre classement.">
+    <meta property="twitter:image" content="img/img1.jpg">
+
+    <!-- Général -->
+    <meta property="author" content="Sheila Khedoo, Florent Lefort">
 </head>
+
 <body>
-    <header> 
-        <div id="logo">
-        <a href="index.html">
-            <img src="img/logo.png" alt="Logo Rest'O'Paris">
-        </a>
+
+    <header role="banner"> 
+
+        <div id="connexion">
+            <div class="co">
+                <i class="fas fa-user" onclick="window.location.href = 'page_co.html'"
+                ></i>
+                <a href="#">Inscription/Connexion</a>
+            </div>
+                <a href="page_contact.html" id="contact">Contactez-nous</a>
         </div>
-        <nav>
+
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/logo1.png" alt="Logo Rest'O'Paris" role="link" aria-label="Page d'accueil">>
+            </a>
+        </div>
+
+        <nav aria-label="navigation principale">
             <ul>
-                <li><a href="page_2.html">Top 1</a></li>
-                <li><a href="page_3.html">Top 2</a></li>
-                <li><a href="page_4.html">Top 3</a></li>
-                <li><a href="page_contact.html">Contact</a></li>
-            </ul> 
+                <li><a href="index.html" aria-label="Page d'accueil">Accueil</a></li>
+                <li><a href="page_2.html" aria-label="Deuxième page">Top 1</a></li>
+                <li><a href="page_3.html" aria-label="Troisième page">Top 2</a></li>
+                <li><a href="page_4.html" aria-label="Quatrième page">Top 3</a></li>
+            </ul>
         </nav>
+
     </header>
 
     <hr>
@@ -30,7 +63,6 @@
         <div id="first">
 
             <article class="article1">
-                <h1 class="title">LE SEPTIME</h1>
 
                 <img src="img/img1.jpg" alt="Restaurant parisien : Le Septime">
                 
@@ -49,8 +81,9 @@
                     <p><u>LES PRIX ?</u> Menus 60 € (midi) et 95 € (soir), accord mets-vins + 45-60 €.</p>
             </article>
 
-            <section id="adress">
-                
+            <aside id="adress">
+                <h1 class="title"><u>LE SEPTIME</u></h1>
+
                 <p><strong>ADRESSE :</strong> 80, rue de Charonne, 75011 Paris <br>
                     <strong>TÉL : </strong>+33 1 43 67 38 29<br>
                     <strong>MÉTRO : </strong> Charonne<br>
@@ -58,20 +91,32 @@
                     <strong>HORAIRES</strong> : De 12h15 à 14h et de 19h30 à 22h. <br>
                     Fermé samedi et dimanche.
                 </p>
-            </section>
+
+                <div id="buttons">
+                   
+                        <button id="book" type="button" onclick="window.location.href = 'https://module.lafourchette.com/fr_FR/module/10889-d34ca#/54499/pdh';" target="_blank">Réservation</button>
+                                    
+                        <button id="delivery" type="button" onclick="window.location.href = 'https://www.septimealamaison.fr/';"
+                         target="_blank">Livraison</button>
+                    
+                        <button id="tripadvisor" type="button" onclick="window.location.href = 'https://tripadvisor.fr/Restaurant_Review-g187147-d2185868-Reviews-Septime-Paris_Ile_de_France.html#REVIEWS'"
+                         target="_blank"><i class="fab fa-tripadvisor"></i>TripAdvisor</button>
+                    
+                </div>
+                
+            </aside>
 
         </div>
 
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <p> &copy; <u>REST'O'PARIS</u> </p> 
-        <div id="social_media">
-             <i class="fab fa-facebook"></i>
-             <i class="fab fa-instagram"></i>
-             <i class="fab fa-twitter"></i>
+        <div class="soc_media">
+             <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-label="Icône Facebook"></i></a>
+             <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label="Icône Instagram"></i></a>
+             <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-label="Icône Twitter"></i></a>
         </div>
      </footer>
-    
 </body>
 </html>

@@ -1,62 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/fontawesome-free-5.15.3-web/css/all.css">
     <title>Rest'O'Paris - Contact</title>
+    <meta name="description" content="Vous cherchez un endroit où vous pourriez manger ou juste boire un verre? Rest'O'Paris a fait pour vous une sélection des trois 
+    meilleurs restaurants à Paris">
+    <!-- 170 caractères maximum -->
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Formulaire de contact">
+    <meta property="og:description" content="Si vous êtes un restaurant ou même un particulier souhaitant des infos sur notre sélection, contactez-nous!">
+    <meta property="og:url" content="https://www.restoparis/contact.com">
+    <meta property="og:image" content="img/logo1.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:domain" content="https://www.restoparis/contact.com">
+    <meta property="twitter:title" content="Rest'O'Paris - Top 3 des meilleurs restaurants de Paris - Contactez-nous">
+    <meta property="twitter:image" content="img/logo1.jpg">
+
+    <!-- Général -->
+    <meta property="author" content="Sheila Khedoo, Florent Lefort">
 </head>
 <body>
     
     <header> 
-        <div id="logo">
-        <a href="index.html">
-            <img src="img/logo.png" alt="Logo Rest'O'Paris">
-        </a>
+
+        <div id="connexion">
+            <div class="co">
+                <i class="fas fa-user" onclick="window.location.href = 'page_co.html'"></i>
+                <a href="#">Inscription/Connexion</a>
+            </div>
+                <a href="page_contact.html" id="contact">Contactez-nous</a>
         </div>
-        <nav>
+
+        <div id="logo">
+            <a href="index.html">
+                <img src="img/logo1.png" alt="Logo Rest'O'Paris" role="link" aria-label="Page d'accueil">
+            </a>
+        </div>
+
+        <nav aria-label="navigation principale">
             <ul>
-                <li><a href="page_2.html">Top 1</a></li>
-                <li><a href="page_3.html">Top 2</a></li>
-                <li><a href="page_4.html">Top 3</a></li>
-                <li><a href="page_contact.html">Contact</a></li>
-            </ul> 
+                <li><a href="index.html" aria-label="Page d'accueil">Accueil</a></li>
+                <li><a href="page_2.html" aria-label="Deuxième page">Top 1</a></li>
+                <li><a href="page_3.html" aria-label="Troisième page">Top 2</a></li>
+                <li><a href="page_4.html" aria-label="Quatrième page">Top 3</a></li>
+            </ul>
         </nav>
+
     </header>
 
     <hr>
 
     <main>
-        <form action="" method="POST">
+        <form action="Envoyer un message" method="POST" role="form" aria-label="Formulaire de contact">
             <div class="contact">
                 <label for="name">Nom:</label>
-                <input type="text" id="name" name="user_name">
+                <input type="text" id="name" name="user_name" role="text" aria-label="Nom">
             </div>
 
             <div class="contact">
                 <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_mail">
+                <input type="email" id="mail" name="user_mail" role="text" aria-label="E-mail">
             </div>
 
             <div class="contact">
                 <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message" placeholder="Ecrivez votre message..."></textarea>
+                <textarea id="msg" name="user_message" placeholder="Ecrivez votre message..." role="textbox" aria-label="Votre message"></textarea>
             </div>
 
             <div class="button">
-                <button type="submit">ENVOYER</button>
+                <button type="submit" role="button">ENVOYER</button>
             </div>     
             
         </form> 
     </main>
     
-    <footer>
+    <footer role="contentinfo">
         <p> &copy; <u>REST'O'PARIS</u> </p> 
-        <div id="social_media">
-             <i class="fab fa-facebook"></i>
-             <i class="fab fa-instagram"></i>
-             <i class="fab fa-twitter"></i>
+        <div class="soc_media">
+             <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-label="Icône Facebook"></i></a>
+             <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label="Icône Instagram"></i></a>
+             <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-label="Icône Twitter"></i></a>
         </div>
      </footer>
 

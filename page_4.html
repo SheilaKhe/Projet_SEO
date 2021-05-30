@@ -1,27 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font/fontawesome-free-5.15.3-web/css/all.css">
     <title>REST'O'PARIS-Top 3</title>
+    <meta name="description" content="Vous cherchez un endroit où vous pourriez manger ou juste boire un verre? Rest'O'Paris a fait pour vous une sélection des trois 
+    meilleurs restaurants à Paris">
+    <!-- 170 caractères maximum -->
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Troisième meilleur restaurant de Paris.">
+    <meta property="og:description" content="Voici le restaurant parisien qui arrive à la troisième place de notre classement.">
+    <meta property="og:url" content="https://www.restoparis/top3.com">
+    <meta property="og:image" content="img/irlande.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:domain" content="https://www.restoparis/top3.com">
+    <meta property="twitter:title" content="Rest'O'Paris - Top 3 des meilleurs restaurants de Paris - Top 3">
+    <meta property="twitter:image" content="img/irlande.jpg">
+
+    <!-- Général -->
+    <meta property="author" content="Sheila Khedoo, Florent Lefort">
 </head>
 <body>
-    <header> 
-        <div id="logo">
-        <a href="index.html">
-            <img src="img/logo.png" alt="Logo Rest'O'Paris">
-        </a>
+    <header role="banner">
+
+        <div id="connexion">
+            <div class="co">
+                <i class="fas fa-user" onclick="window.location.href = 'page_co.html'"></i>
+                <a href="#">Inscription/Connexion</a>
+            </div>
+                <a href="page_contact.html" id="contact">Contactez-nous</a>
         </div>
-        <nav>
+
+        <div id="logo">
+            <a href="index.html">
+            <img src="img/logo1.png" alt="Logo Rest'O'Paris" role="link" aria-label="Page d'accueil">
+            </a>
+        </div>
+        <nav aria-label="navigation principale">
             <ul>
-                <li><a href="page_2.html">Top 1</a></li>
-                <li><a href="page_3.html">Top 2</a></li>
-                <li><a href="page_4.html">Top 3</a></li>
-                <li><a href="page_contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Page d'accueil">Accueil</a></li>
+                <li><a href="page_2.html" aria-label="Deuxième page">Top 1</a></li>
+                <li><a href="page_3.html" aria-label="Troisième page">Top 2</a></li>
+                <li><a href="page_4.html" aria-label="Quatrième page">Top 3</a></li>
             </ul> 
         </nav>
+
     </header>
 
     <hr>
@@ -29,11 +58,11 @@
     <main>
 
         <main>
+
             <div id="first">
                 <article class="article1">
-                    <h1>CORCORAN’S IRISH PUB</h1>
     
-                    <img src="img/irlande.jpg" alt="Restaurant parisien : Le Septime">
+                    <img src="img/irlande.jpg" alt="Le pub Irlandais Corcoran’s">
     
                     <p class="description">
                         Au Corcoran’s, vous allez trouver le vrai pub Irlandais, 
@@ -45,17 +74,27 @@
                         etc... Au Corcoran's il y a plein de choses ! Lorsqu’il s’agit 
                         de faire la fête, les irlandais sont réputés pour être très 
                         accueillants et sans cesse à l’affût de nouvelles rencontres !</p>
-                       <p>Live Irish, live Corcoran's ! </p> 
+                       <p><u>Live Irish, live Corcoran's !</u></p> 
                 </article>
     
-                <section id="adress">
-    
+                <aside id="adress">
+                    <h1><u>CORCORAN’S IRISH PUB</u></h1>
                     <p>  
                         <strong>ADRESSE : </strong> 23 rue Saint André des Arts 75006 Paris<br>
-                         <strong>TEL :</strong>+33 (0)1 40 46 97 46<br>
-                        <strong>SITE :</strong><a href="http://sacrecoeur.corcoransirishpub.fr/%22%3E"> http://sacrecoeur.corcoransirishpub.fr/</a>   
-                    </p>
-                </section>
+                         <strong>TEL :</strong> +33 (0)1 40 46 97 46<br>
+                         <strong>MÉTRO :</strong> St-Michel-Notre-Dame, Odéon, Cluny-La Sorbonne <br>
+                        <strong>SITE :</strong><a href="http://sacrecoeur.corcoransirishpub.fr/%22%3E" target="_blank"> Corcoransirishpub.fr</a><br>  
+                    </p>    
+
+                    <div id="buttons">
+                        <button id="book" type="button" role="link" onclick="window.location.href = 'http://www.corcoransirishpub.fr/reservation/'"
+                        target="_blank">Réservation</button>
+                    
+                        <button id="tripadvisor" type="button" role="link" onclick="window.location.href = 'https://www.tripadvisor.fr/Restaurant_Review-g187147-d6721123-Reviews-Corcorans_Irish_pub-Paris_Ile_de_France.html'"
+                        target="_blank"><i class="fab fa-tripadvisor"></i>TripAdvisor</button>
+                    </div>
+                                          
+                </aside>
     
             </div>
     
@@ -63,12 +102,12 @@
 
     </main>
     
-    <footer>
+    <footer role="contentinfo">
         <p> &copy; <u>REST'O'PARIS</u> </p> 
-        <div id="social_media">
-             <i class="fab fa-facebook"></i>
-             <i class="fab fa-instagram"></i>
-             <i class="fab fa-twitter"></i>
+        <div class="soc_media">
+             <a href="http://www.facebook.com" target="_blank"><i class="fab fa-facebook" aria-label="Icône Facebook" aria-labelledby="social_media"></i></a>
+             <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram" aria-label="Icône Instagram" aria-labelledby="social_media"></i></a>
+             <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter" aria-label="Icône Twitter" aria-labelledby="social_media"></i></a>
         </div>
      </footer>
 
